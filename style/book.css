@@ -1,0 +1,53 @@
+.book{
+    background-color: var(--bg-color-book-card);
+    border-radius: 20px;
+}
+
+.book-headline, .book-content-container{
+    padding-inline: var(--content-padding);
+    padding-block: var(--content-padding);
+}
+
+.book-img{
+    height: 150px;
+    border-top: 2px solid var(--border-book-card);
+    border-bottom: 2px solid var(--border-book-card);
+    background-color: var(--bg-color-book-img);
+}
+
+.book-img img{
+    height: 100%;
+}
+
+.book-price-likes, .book-comments{
+    padding-block: var(--content-padding);
+}
+
+.likes-container{
+    gap: 10px;
+}
+
+.book-price{
+    color: var(--color-price);
+    font-weight: 900;
+}
+
+.like-btn i{
+    color: var(--color-price);
+}
+
+.book-description{
+    padding-bottom: var(--content-padding);
+    border-bottom: 2px solid var(--border-book-card);
+}
+.comment-input-container{
+    gap: 10px;
+    padding-top: 20px;
+}
+.book-comment{
+    height: 150px;
+    overflow-y: scroll;
+}
+.comment-input-user{
+    flex: 1;
+}

@@ -1,0 +1,11 @@
+:root{
+    --bg-color-body: #071820;
+    --bg-color-book-card: #10333E;
+    --border-book-card: #4D8898;
+    --bg-color-book-img: #134659;
+    --color-price: #FE6B64;
+    --color-font: #fff;
+
+    --content-max-width: 1440px;
+    --content-padding: 16px;
+}
