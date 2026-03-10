@@ -1,6 +1,18 @@
+#books-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 32px;
+    justify-content: center;
+    padding: 40px;
+}
+
 .book{
     background-color: var(--bg-color-book-card);
     border-radius: 20px;
+}
+
+.book-headline{
+    min-height: 100px;
 }
 
 .book-headline, 
@@ -51,6 +63,7 @@
 .book-description{
     padding-bottom: var(--content-padding);
     border-bottom: 2px solid var(--border-book-card);
+    min-height: 140px;
 }
 
 .comment-input-container{
