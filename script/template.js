@@ -5,6 +5,13 @@ function commentTemplate(comment) {
     `;
 }
 
+function templateLikeButton(book, bookIndex){
+    return /*html*/`
+        <p>${book.likes}</p>
+        <button class="like-btn" onclick="likeBook(${bookIndex})"><i class="${book.liked ? "fa-solid" : "fa-regular"} fa-heart"></i></button>
+    `
+}
+
 function bookTemplate(book, bookIndex) {
   return /*html*/ `
         <div class="book">
@@ -17,9 +24,8 @@ function bookTemplate(book, bookIndex) {
             <div class="book-content-container">
                 <div class="book-price-likes display-flex flex-center-y flex-space-between">
                     <p class="book-price"><strong>${book.price.toFixed(2).replace(".", ",")}€</strong></p>
-                    <div class="likes-container display-flex flex-center-y">
-                        <p>${book.likes}</p>
-                        <button class="like-btn" onclick="likeBook(${bookIndex})"><i class="${book.liked ? "fa-solid" : "fa-regular"} fa-heart"></i></button>
+                    <div id="likes-content-${bookIndex}" class="likes-container display-flex flex-center-y">
+                        ${templateLikeButton(book, bookIndex)}
                     </div>
                 </div>
                 <div class="book-description">
