@@ -23,17 +23,26 @@
     padding-block: var(--content-padding);
 }
 
+.book-comments{
+    padding-bottom: 0;
+}
+
 .likes-container{
     gap: 10px;
 }
 
-.book-price{
+.book-price strong{
     color: var(--color-price);
-    font-weight: 900;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .like-btn i{
     color: var(--color-price);
+    font-size: 20px;
+}
+.book-info tr td:first-child{
+    padding-right: 16px;
 }
 
 .book-description{
@@ -44,10 +53,32 @@
     gap: 10px;
     padding-top: 20px;
 }
+.comment-user-name{
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
 .book-comment{
     height: 150px;
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #10333E #34515B;
 }
 .comment-input-user{
     flex: 1;
+    background-color: rgba(255,255,255,0.15);
+    padding-left: 7px;
+    border: none;
+    border-bottom: 2px solid var(--border-book-card);
+}
+.comment-input-user::placeholder{
+    color: rgba(255,255,255,0.45);
+    font-style: italic;
+}
+.comment-btn{
+    font-size: 22px;
+    padding: 6px;
+    
+}
+.comment-btn i{
+    color: rgba(255,255,255,0.85);
 }

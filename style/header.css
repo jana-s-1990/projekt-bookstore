@@ -1,0 +1,13 @@
+header{
+    background-color: #0a222c;
+    padding-inline: 16px;
+    padding-block: 6px;
+    border-bottom: 2px solid var(--border-book-card);
+}
+
+.header-logo{
+    width: 250px;
+}
+.header-logo img{
+    width: 100%;
+}

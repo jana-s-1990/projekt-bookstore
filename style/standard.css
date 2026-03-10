@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     color: var(--color-font);
+    font-family: "Google Sans", sans-serif;
+    line-height: 1.25;
 }
+
 body{
     background-color: var(--bg-color-body);
 }
@@ -12,13 +15,16 @@ a{
     text-decoration: none;
 }
 
-button, a{
+button, 
+a{
     cursor: pointer;
 }
+
 button{
     border: none;
     background: none;
 }
+
 h3{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }

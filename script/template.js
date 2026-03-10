@@ -1,6 +1,6 @@
 function commentTemplate(comment) {
   return /*html*/ `
-        <p>[${comment.name}]</p>
+        <p class="comment-user-name"><strong>[${comment.name}]</strong></p>
         <p>${comment.comment}</p>
     `;
 }
@@ -15,9 +15,9 @@ function bookTemplate(book, bookIndex) {
                 <img src="assets/img/book-placeholder.png" alt="${book.name}">
             </figure>
             <div class="book-content-container">
-                <div class="book-price-likes display-flex flex-center-x flex-space-between">
-                    <p class="book-price">${book.price}</p>
-                    <div class="likes-container display-flex flex-center-x">
+                <div class="book-price-likes display-flex flex-center-y flex-space-between">
+                    <p class="book-price"><strong>${book.price.toFixed(2).replace(".", ",")}€</strong></p>
+                    <div class="likes-container display-flex flex-center-y">
                         <p>${book.likes}</p>
                         <button class="like-btn" onclick="likeBook(${bookIndex})"><i class="${book.liked ? "fa-solid" : "fa-regular"} fa-heart"></i></button>
                     </div>
