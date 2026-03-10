@@ -18,7 +18,7 @@ function renderComments(comments){
     }
 
     let commentsHTML = "";
-
+    
     for (let commentIndex = comments.length - 1; commentIndex >= 0; commentIndex--) {
         const comment = comments[commentIndex];
         commentsHTML += commentTemplate(comment);

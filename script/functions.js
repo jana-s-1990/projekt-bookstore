@@ -11,6 +11,7 @@ function likeBook(bookIndex) {
 
   renderBooks();
 }
+
 function addComment(bookIndex) {
   let commentInputRef = document.getElementById(`comment-input-${bookIndex}`);
   let commentText = commentInputRef.value;
